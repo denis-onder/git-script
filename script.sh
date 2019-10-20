@@ -35,7 +35,6 @@ function get_branch_name {
 SCRIPT_PATH=`pwd`
 cd $SCRIPT_PATH
 get_branch_name
-echo Commit message:
-read GIT_COMMIT_MSG
+read -p "Commit message: " GIT_COMMIT_MSG
 
-git add . && git commit -m $GIT_COMMIT_MSG && git push origin $GIT_BRANCH_NAME
+git add . && git commit -m "$GIT_COMMIT_MSG" && git push origin $GIT_BRANCH_NAME

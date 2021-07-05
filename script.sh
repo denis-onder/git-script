@@ -11,4 +11,4 @@ read -p "Commit message: " GIT_COMMIT_MSG
 git add . && git commit -m "$GIT_COMMIT_MSG" && git push -u origin $GIT_BRANCH_NAME
 # Clear and echo
 clear
-echo "Successfully pushed to remote repository. Branch: " $GIT_BRANCH_NAME
+echo "Successfully pushed to remote repository. Branch:" $GIT_BRANCH_NAME
